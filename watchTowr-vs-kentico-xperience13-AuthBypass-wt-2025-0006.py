@@ -85,8 +85,7 @@ def verify_auth(url):
     elif 'The security token could not be authenticated or authorized' in resp.text:
         print('[-] NOT VULNERABLE: Patch probably applied')
     else:
-        print('[-] NOT VULNERABLE: Some unknown error appeared:\r\n')
-        print(resp.text)
+        print('[-] NOT VULNERABLE: Some unknown error appeared (probably patched with Hotfix 178)')
 
     return
 
